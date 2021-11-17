@@ -1,4 +1,17 @@
 {
+  "name:": "accapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "17.x",
+    "npm": "8.x"
+  },
+  "keywords": [],
+  "author": "HobaPro",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",

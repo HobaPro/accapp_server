@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const cors = require('cors');
 
 app.use(
@@ -15,7 +14,7 @@ const authRouter = require('./routes/auth.route')
 
 app.use(authRouter);
 
-app.listen(port, err => {
+app.listen(process.env.PORT || 3000, err => {
     if(err) console.log(err);
     else console.log("All All Right");
 })

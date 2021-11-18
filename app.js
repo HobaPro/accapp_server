@@ -18,6 +18,10 @@ app.use((req, res, next) => {
     next();
 })
 
+app.get('/', (req, res) => {
+    res.send("Hellooooooooo");
+})
+
 const authRouter = require('./routes/auth.route')
 
 app.use(authRouter);
